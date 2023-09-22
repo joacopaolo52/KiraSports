@@ -1,85 +1,86 @@
 * {
-    font-family: 'PT Serif', serif;
-}
-    
-    /************ GENERAL **************/
-
-body {
-    background-color: black;
+    font-family: 'Lobster', cursive;
 }
 
 html {
     font-size: 62.5%;
-    overflow-x: hidden;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
+body {
+    background: linear-gradient(to bottom, #F4ABDE, #F1BFE2);
     width: 99vw;
+    scrollbar-width : none;
 }
 
-a {
-    text-decoration: none;
-    color: white;
-    font-weight: bold;
-}
-
-a:hover {
-    color: white;
-    opacity: 0.7;
-}
-
-    /************ HEADER **************/
-
-
-.bg-dark {
-    background-color: black !important;
-}
-
-nav {
-    position: fixed !important;
-    top: 0;
-    z-index: 999;
-    width: 99vw;
-}
-.logo{
-    width: 10rem;
-    background-color: whitesmoke;
-}
-
-.logo:hover, .dropdown-item:hover {
-    background-color: red;
-}
-
-.navbar-nav {
+    /********************************* INDEX **********************************/
+    /* HEADER Y FOOTER*/
+.nav {
+    width: 100%;
+    justify-content: center;
     margin: auto;
+    background-color: #F4ABDE;
+    border-bottom: 0.2rem solid black;
+}
+.nav-fixed {
+    position: fixed;
+    top: 0;
 }
 .nav-link {
-    color: white !important;
-    font-size: 2rem;
-    margin: 2rem;
+    color: black;
+    font-size: 3.5rem;
     font-weight: bold;
+    margin: 2rem 4rem;
+    margin: center;
+    padding: 1rem;
+    justify-content: center;
+}
+.nav-link:hover , .nav-link:focus {
+    color: white;
+}
+.nav-link:visited {
+    color: none;
 }
 
-.nav-link:hover {
-    color: rgb(255, 0, 0) !important;
+footer {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    margin-bottom: 0;
+    text-align: center;
 }
 
-        /* CARRITO */
+h1 {
+    font-size: 3rem;
+    margin: 1rem;
+}
+h3 {
+    font-size: 2rem;
+}
+
+#nav {
+    display: none;
+}
 .nav-item-img {
     position: fixed;
-    top: 10px;
-    right: 50px;
-    background-color: #ff000094;
-    padding: 20px;
-    border-radius: 20%;
+    top:1rem;
+    right: 5rem;
+    background-color: #ffffff4b;
+    padding: 1.5rem;
+    border-radius: 90%;
     margin: auto;
-    align-items: center;
-    margin-top: 20px;
+    margin-top: 2rem;
     z-index: 2000;
 }
 .nav-item-img:hover {
     cursor: pointer;
 }
 .nav-img {
-    width: 40px;
+    width: 4rem;
 }
+
 @media (min-width:768px) and (max-width:1024px) {
     #verCarrito {
         width: 50vw !important;
@@ -130,171 +131,92 @@ nav {
     z-index: 999;
 }
 
-/* FORMULARIO */
+/* BIENVENIDA */
 
-.form-control {
-    background-color: rgb(207, 207, 207);
-    width: 20rem;
-    height: 4rem;
-    margin-right: 10rem;
-    border: solid 1px red;
-    box-shadow: 2px 3px 4px red;
-    font-size: 1.5rem;
-    transition: all 1s;
+#bienvenida {
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
 }
-
-.form-control::placeholder {
+#bienvenidaText {
+    font-size: 4rem;
     color: black;
     font-weight: bold;
-}
-.form-control:hover, .form-control:focus {
-    background-color: red;
-    color: black;
-    border: solid 1px black;
-    box-shadow: 2px 3px 4px white;
-    font-size: 1.7rem;
-    font-weight: bold;
-}
-
-.btn-outline-success {
-    width: 8rem;
-    color: black;
-    font-size: 1.7rem;
+    margin-top: 5rem;
     text-align: center;
-    border: solid 1px red;
-    background-color: white;
-    font-weight: bold;
-    box-shadow: 2px 3px 4px red;
-    margin-right: 2rem;
 }
-.btn-outline-success:hover {
-    background-color: red;
-    color: black;
-    border: solid 1px black;
-    box-shadow: 2px 3px 4px white;
-}
-
-    /************ BANNER **************/
-
-
 .inputNombre {
     border: none;
-    width: 200px;
-    max-width: 300px;
+    width: 15rem;
+    max-width: 20rem;
     background-color: transparent;
-    border-bottom: 0.2rem solid white;
-    color: white;
+    border-bottom: 0.2rem solid black;
 }
-.banner {
-    position: relative;
+.inputNombre:focus{
+    outline: none;
+}
+
+
+/* IMAGEN */
+.img-central {
     width: 100%;
-    height:100vh;
     display: flex;
+    margin: auto;
     justify-content: center;
-    flex-direction: column;
-    background-color: rgba(82, 82, 82, 0.24);
+    align-items: center;
+    z-index: 900;
 }
 
-.banner__bg {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: contain;
-    background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../assets/fondo3.jpg);
-    background-size: cover;
+    /********************************* POSTRES **********************************/
+
+
+/* *********TIENDA********* */
+
+
+.tienda {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10rem;
 }
 
-.banner__content {
-    z-index: 888;
-    width: 100%;
-}
-
-h1 {
+.h3-tienda-text{
     font-size: 4rem;
-    letter-spacing: 2rem;
+    color: white;
+    margin: auto;
+    margin-top: 4rem;
+    justify-content: center;
+}
+
+h4, h5 {
+    text-align: center;
     font-weight: bold;
-    font-family: 'PT Serif', serif;
-    color: white;
-    margin-left: 2rem;
-    flex-wrap: wrap;
+    font-size: 1.7rem;
+    margin-top: 1rem;
+    padding: 0.5rem;
 }
 
-.banner__media-icons {
-    z-index: 888;
-    position: absolute;
-    right: 5rem;
-    display: flex;
-    flex-direction: column;
-    transition: 0.5s ease;
-    color: white;
-}
-.fab, .fas {
-    font-size: 3rem;
-    margin-bottom: 5rem;
-    color: red;
-}
-@media (min-width:568px) and (max-width:768px) {
-    h1 {
-        font-size: 3rem;
-    }
-}
-@media (min-width:300px) and (max-width:568px) {
-    h1 {
-        font-size: 3rem;
-        letter-spacing: 0;
-    }
-}
-
-    /************ TIENDA **************/
-
-.tienda {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    background-color: black;
-}
-
-
-.tienda {
-    justify-content: center;
-    align-items: center;
-}
-.productos {
+.postres {
     margin: 4rem;
     padding: 2rem;
+    background-color: rgba(255, 255, 255, 0.329);
     border-radius: 2rem;
-    cursor: pointer;
 }
 .producto {
     border: solid 0.2rem black;
     border-radius: 2rem;
-    width: 400px;
+    width: 40rem;
 }
 
-.producto-precio {
-    font-size: 12px;
-    text-align: center;
-    margin: 15px 0px;
-    color: white;
-}
-.producto-nombre {
-    font-size: 15px;
-    text-align: center;
-    margin: 15px 0px;
-    color: white;
-}
-
-.button-tienda {
+.button-postres {
     display: flex;
-    background-color: rgba(248, 9, 9, 0.651);
+    background-color: black;
     color: white;
-    font-size: 15px;
+    font-size: 2rem;
     font-weight: bold;
-    border: none;
-    border-radius: 90%;
+    border: 2px solid white;
     padding: 1rem;
     justify-content: center;
     align-items: center;
@@ -304,167 +226,14 @@ h1 {
     transition: all 800ms;
 }
 
-.button-tienda:hover {
-    background-color: black;
-    color: white;
+.button-postres:hover {
+    background-color: #F1BFE2;
+    color: black;
+    border: 2px solid black;
 }
 
-
-    /************ SOBRE NOSOTROS **************/
-
-.mapa {
-    margin: 2rem;
-    border-radius: 2rem;
-    box-shadow: 12px 11px 10px black;
-}
-
-.mapa__wrapper {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    width: 100%;
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../assets/fondo.jpg);
-    background-attachment: fixed;
-    background-size: cover;
-    background-position: right center;
-    padding: 50px 0;
-}
-
-.mapa__wrapper--contenedor1 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding-bottom: 10px;
-}
-
-.mapa_container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.mapa__wrapper--contenedor3 {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    padding-top: 14rem;
-    color: #fff;
-    text-align: center;
-    flex-wrap: wrap;
-}
-
-.h22 {
-    font-size: 4rem;
-    padding-bottom: 3rem;
-    font-weight: bold;
-    color: white;
-}
-
-.divisor {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 15rem;
-    width: 0.2rem;
-    background-color: white;
-}
-
-.h2-sn {
-    color: white;
-    font-size: 5rem;
-    margin: 2rem;
-}
-
-.subcontenedor2__p {
-    color: white;
-    font-size: 1.5rem;
-    margin-bottom: 2rem;
-}
-
-@media (min-width:300px) and (max-width:568px) {
-    .h2-sn {
-        font-size: 3rem;
-        margin: 1rem;
-    }
-    .w-50 {
-        width: 80% !important;
-    }
-}
-
-@media (min-width:300px) and (max-width:900px) {
-    .mapa__wrapper--contenedor3 {
-        flex-wrap: wrap;
-    }
-    .divisor {
-        display: none;
-    }
-
-}
-
-    /************ FOOTER **************/
-
-.h3-footer {
-    color: white;
-    font-size: 4rem;
-}
-
-footer {
-    background-color: black;
-    width: 100%;
-}
-
-label {
-    font-size: 1.5rem
-}
-
-input {
-    height: 4rem;
-}
-
-input::placeholder {
-    font-size: 1.5rem;
-}
-
-.mensaje {
-    height: 8rem;
-}
-
-.button {
-    width: 50%;
-    display: block;
-    height: 37px;
-    margin: 0px auto;
-    margin-top: 20px;
-    margin-bottom: 15px;
-    background-color: white;
-    text-decoration: none;
-    color: #2e2e2e;
-    font-weight: bold;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    font-size: 2rem;
-}
-
-.button:hover {
-    background-color: black;
-    color: white;
-}
-.contacto {
-    margin-top: 5rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    font-size: 2rem;
-}
-
-
-#whatsapp {
-    position: fixed;
-    z-index: 1000;
-    bottom: 20px;
-    right: 20px;
-    width: 80px;
+.modal {
+    display: grid;
 }
 
 /* VER CARRITO */
@@ -510,7 +279,7 @@ input::placeholder {
     height: 0,3rem;
 }
 
-#listaCarrito {
+#listaCarrito::-webkit-scrollbar-thumb {
     background-color: #00000094;
     border-radius: 20px;
     border: 1px solid #f1f2f3;
@@ -518,7 +287,7 @@ input::placeholder {
 }
 
 #pagar, #borrar {
-    background-color: #ff000094;
+    background-color: #F4ABDE;
     color:  black;
     width: 20rem;
     margin: auto;
@@ -535,26 +304,25 @@ input::placeholder {
 
 #cantidadCarrito {
     position: absolute;
-    top: 70px;
-    width: 20px;
-    height: 20px;
-    border-radius: 20%;
-    background-color: white;
+    width: 3rem;
+    height: 3rem;
+    border-radius: 100%;
+    background-color: rgba(0, 0, 0, 0.769);
     color: white;
     text-align: center;
-    font-size: 20px;
+    font-size: 2rem;
 }
 
-/* 
+
 .cartItem {
     display: flex;
-    background-color: #ff000094;
+    background-color: #cf87ba;
     border-radius: 10px;
     margin: 1rem;
     justify-content: space-between;
     align-items: center;
     box-shadow: 3px 3px 3px #11111134;
-    color: white;
+    color: black;
 }
 
 .itemDescription {
@@ -576,4 +344,26 @@ input::placeholder {
     width: 10rem;
     justify-content: center;
     border-start-start-radius: 10px;
-} */
+}
+
+
+
+    /*SWEET ALERT */
+.swal2-styled.swal2-confirm {
+    font-size: 1.5rem !important;
+    background-color: transparent !important;
+    color: white;
+    border: 1px solid white !important;
+} 
+.swal2-styled.swal2-confirm:hover {
+    background-color: #F4ABDE !important;
+    color: black;
+    transition: all 1s;
+}
+
+.toastify {
+    width: auto;
+    font-size: 1.3rem;
+    text-align: center;
+}
+

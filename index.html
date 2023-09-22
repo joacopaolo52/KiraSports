@@ -1,149 +1,77 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>KIRA SPORTS</title>
     <link rel="shortcut icon" href="assets/logo.jpg">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=PT+Serif&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/animate.css">
-    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <title>Saky</title>
 </head>
+
 <body onload="init()">
-
-
-    <a href="https://wa.me/+5491122334455" target="_blank">   <img id="whatsapp" src="./assets/whatsapp-icon.png" alt="whatsapp">    </a>
-
-
-    <!-- HEADER -->
-    
-    
+        <!-- HEADER -->
 
     <header>
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-            <div class="container-fluid">
-                <!-- <img class="logo" src="assets/thoriza.png" alt="Logo"> -->
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                        <li class="nav-item"><a class="nav-link" aria-current="page" href="#banner">Inicio</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#nosotros">Sobre Nosotros</a></li>
-                        <li class="nav-item"><a class="nav-link" href="pages/tienda.html">Tienda</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
+        <ul class="nav justify-content-center">
+            <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="pages/postres.html">Postres</a></li>
+          </ul>
     </header>
 
-    <!-- BANNER -->
-    <!-- BIENVENIDA A LA PAGINA -->
+      <!-- HEADER 2-->
 
-    <div class="banner" id="banner">
-        <div class="banner__bg"></div> 
-        <div class="banner__content"><h1 id="bienvenidaText">Hola <span> <input type="text" class="inputNombre"></span> bienvenido a Kira Sports.</p></h1></div>
-      
+    <div id="nav">
+
+      <div class="collapse" id="navbarToggleExternalContent">
+        <div class="bg-dark p-4">
+          <h5 class="text-white h4">Zack Y Coffe</h5>
+          <ul>
+            <li><a class="collapse-link" href="#">Home</a></li>
+            <li><a class="collapse-link" href="pages/postres.html">Postres</a></li>
+          </ul>
+        </div>
+      </div>
+      <nav class="navbar navbar-dark bg-dark">
+        <div class="container-fluid">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="nav-item-img"><img class="nav-img" src="assets/carrito.png" alt="Carrito de compras"></div>
+        </div>
+      </nav>
+
     </div>
 
 
+    <!-- BIENVENIDA A LA PAGINA -->
 
-    <!-- SOBRE NOSOTROS 2 -->
+    <div id="bienvenida">
+      <p id="bienvenidaText">Hola <span> <input type="text" class="inputNombre"></span> bienvenido a Saky.</p>
+    </div>
+    
+        <!-- IMAGEN -->
 
-    <div class="mapa__wrapper" id="nosotros">
-        <div class="mapa__wrapper--contenedor1">
-            <h2 class="h2-sn">¿DÓNDE ESTAMOS?</h2>
-        </div>
-        <div class="mapa_container" data-sr-id="5">
-            <iframe class="mapa" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d26232.97118525848!2d-58.404809401954154!3d-34.72733424735233!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccdd2c61a84f7%3A0x2d7b90dd5022c123!2sThoriza!5e0!3m2!1ses!2sar!4v1634536611568!5m2!1ses!2sar" width="1000" height="400" allowfullscreen="" loading="lazy"></iframe>
-        </div>
-        <div class="mapa__wrapper--contenedor3">
-          <div class="subcontenedor1" data-sr-id="6" >
-              <h2 class="h22">Dirección y teléfono.</h2>
-              <p class="subcontenedor2__p">1122334455</p>
-              <p class="subcontenedor2__p">Calle Falsa 123</p>
-              <p class="subcontenedor2__p">Buenos Aires, Argentina.</p>
-          </div>
-
-          <div class="divisor"></div>
-          
-          <div class="subcontenedor2">
-            <h2 class="h22">Horarios y tienda</h2>
-            <p class="subcontenedor2__p">Lunes a sabados</p>
-            <p class="subcontenedor2__p">10:00hs a 19:00hs</p>
-            <p class="subcontenedor2__p">Tienda online todos los dias las 24hs.</p>
-          </div>  
-        </div>
-      </div>
-
-
+    <div class="img-central">
+        <img class="img-fluid" src="assets/logo.png" alt="logo">
+    </div>
 
     <!-- FOOTER -->
-    <footer class="row" id="contacto">
-        
-        <div class="col-lg-6 col-md-12 p-5">
-            <h3 class="h3-footer text-center">Contáctenos</h3>
 
-            <form id="form-contacto">
-                <div class="form-group mt-3">
-                    <label for="name" class="text-white w-50  d-block m-auto label-responsive"> Nombre</label>
-                    <input name="name" type="text" class="form-control  mt-3 mb-2 w-50 m-auto" placeholder=" Ingrese su nombre...">
-                </div>
-                <div class="form-group">
-                    <label for="email" class="text-white w-50  d-block m-auto label-responsive"> Email</label>
-                    <input name="email" type="email" class="form-control mt-2 mb-2  w-50 m-auto" placeholder=" Ingrese su correo...">
-                </div>
-                <div class="form-group">
-                    <label for="mensaje" class="text-white w-50 d-block m-auto label-responsive textarea"> Mensaje</label>
-                    <input name="mensaje" type="textarea" cols="30" rows="10" class="form-control mt-2  w-50 m-auto mensaje" placeholder=" Dejenos su mensaje...">
-                </div>
-                <button type="submit" class="button">Enviar</button>
-            </form>
-
-        </div>
-
-        <div class="map col-lg-6 col-md-12">
-            
-            <h3 class="h3-footer text-center">Contáctenos</h3>
-            
-            <!-- DATOS DE CONTACTO -->
-            <div class="contacto">
-                
-                <a href="https://www.facebook.com/profile.php?id=100055621801258" target="_blank">
-                    <i class="fab fa-facebook" alt="Facebook"></i>
-                    <p class="d-inline-block ms-3">/kirasports</p>
-                </a>
-
-                <a href="https://www.instagram.com/thoriza.ind/" target="_blank">
-                    <i class="fab fa-instagram" alt="instagram"></i>
-                    <p class="d-inline-block ms-3">/kirasports</p>
-                </a>
-
-                <a href="https://wa.me/1164861595" target="_blank">
-                    <i class="fas fa-phone-alt" alt="Telefono contacto"></i>
-                    <p class="d-inline-block ms-3">+54 11 2233 4455</p>
-                </a>
-
-                <a href="mailto:thoriza.ind@gmail.com" target="_blank">
-                    <i class="fas fa-envelope" alt="Correo electronico contacto" ></i>
-                    <p class="d-inline-block ms-3">kirasports@gmail.com</p>
-                </a>
-            </div>
-        </div>
-
+    <footer>
+        <h1>Saky</h1>
+        <h3>Dirección: Calle falsa 123 - Springfield.</h3>
+        <h3>Horario de atención: 10:00 a 19:00.</h3>
     </footer>
 
-    <!-- SCRIPT -->
+    <script src="js/bootstrap.js"></script>
+    <script src="js/app.js"></script>
     <script src="js/wow.min.js"></script>
     <script>
-        new WOW().init();
+      new WOW().init();
     </script>
-    <script src="js/app.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="https://kit.fontawesome.com/27bc2ce0d8.js" crossorigin="anonymous"></script>
 
 </body>
 </html>
